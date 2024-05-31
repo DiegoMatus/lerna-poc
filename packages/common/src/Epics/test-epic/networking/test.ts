@@ -11,6 +11,7 @@ const httpClient = new HttpClient(httpClientConfig);
 export async function fetchDataForEpic() {
   try {
     const response = await httpClient.get<TestDTO>('https://randomuser.me/api/');
+    console.log(response)
     return response.data;
   } catch (error) {
     console.error('Error fetching data:', error);

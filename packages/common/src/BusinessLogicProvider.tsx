@@ -6,7 +6,7 @@ interface BusinessLogicProviderProps {
   children: React.ReactNode;
 }
 
-const BusinessLogicProvider: React.FC<BusinessLogicProviderProps> = ({ children }) => {
+const BusinessLogicProvider: React.FC<BusinessLogicProviderProps> = ({ children}) => {
   return (
     <Provider store={store}>
       {children}
